@@ -2,11 +2,17 @@
 
 **Node Modules**
 
+    Server
     npm install --save-dev express express-graphql graphql
     npm install --save-dev nodemon -g
-    npm install --save create-react-app -g
-    
+    npm install --save-dev cors
     npm install --save lodash
+
+    Client
+    npm install --save create-react-app -g
+    npm install apollo-boost react-apollo graphql --save
+    npm install --save lodash
+
 
 
 
@@ -74,4 +80,10 @@
                 }
         }
     }
-}
+
+    mutation {
+        addAuthor(name: "Photon", age: 29) {
+            name
+            age
+        }
+    }
